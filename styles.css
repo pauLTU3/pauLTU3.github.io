@@ -1,0 +1,370 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.parallax-container {
+    position: relative;
+    height: 100vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(233, 232, 230, 1);
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    color: teal;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.full-width-photo img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+@media screen and (max-width: 500px) {
+    .nav-links {
+         display: none;
+    }
+}
+.square-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.507);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .square-container {
+        position: fixed;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+.square-content {
+    font-size: 18px;
+    color: black;
+}
+
+.square-content h1 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+.square-content p {
+    font-size: 18px;
+    color: black;
+    font-family: cursive;
+}
+
+.square-content a {
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: teal;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* New Styles for Resume Layout */
+
+.sectionresume {
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section {
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* New media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .resume-container {
+        flex-direction: column; /* Change to a single column layout */
+    }
+
+    .column {
+        width: 100%; /* Make each column take full width */
+    }
+}
+
+.print-button-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.print-button {
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hide the print button when printing */
+@media print {
+    .print-button-container {
+        display: none;
+    }
+}
+@media print {
+    body {
+        overflow: visible;
+    }
+}
+.footer {
+    text-align: center;
+    font-size: 10pt;
+    background-color: aliceblue;
+    padding: 8pt;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+}
+
+
+
+.item{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    }
+
+.content{
+    display: grid;
+    margin: auto;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+
+}
+
+.content2{
+    
+    display: grid;
+    margin: auto;
+    object-fit: cover;
+    align-items: middle;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(4, 1fr);    /* 4 rows */
+    gap:10px;
+}
+
+
+.griditem{
+    width: 600px;
+    height: 600px;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+.griditem2{
+
+    max-width: 115px;
+    max-height: 50px;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+.containerflex{
+    display: flex;
+}
+.flexitem{
+    width: 500px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.flexitem2{
+    max-width: 500px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.forma {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: rgb(168, 168, 168, 0.2);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .griditem > img{
+    max-width: 100%;
+    height: 89%;
+  }
+
+
+
+
+/* about */
+.sectionabout {
+    font-family: Raleway, sans-serif;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.I0 {
+   
+    height: 60%;
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    margin: 50px;
+    flex-wrap: wrap;
+    flex-flow: row;
+}
+
+.I1 {
+    background-image: url(enjineer.jpg);
+    background-size: cover;
+    height: 416px;
+    width: 416px;
+}
+
+.I2 {
+    margin: 10px;
+   
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.I2 h2 {
+    margin-bottom: 0;
+    
+}
+
+.I2 p1 {
+    margin-top: 0;
+}
+

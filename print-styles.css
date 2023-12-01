@@ -1,0 +1,29 @@
+
+
+.res {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.sectionresume {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section {
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
