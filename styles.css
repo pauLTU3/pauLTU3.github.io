@@ -188,6 +188,10 @@ body {
 }
 .footer {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
     font-size: 10pt;
     background-color: aliceblue;
     padding: 8pt;
