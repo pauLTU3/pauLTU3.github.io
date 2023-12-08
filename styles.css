@@ -133,18 +133,28 @@ body {
 
 
 .resume-container {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .column {
+
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
 }
 
+
 .section {
+
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.matematika {
+    background-color: #b4c3c3;
     border: none;
     padding: 10px;
     margin-bottom: 20px;
