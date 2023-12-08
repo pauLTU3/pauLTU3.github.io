@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forma</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+  <div id="app">
+    <form>
+      <label for="firstName">Vardas:</label>
+      <input type="text" id="firstName" required>
+
+      <label for="lastName">Pavardė:</label>
+      <input type="text" id="lastName" required>
+
+      <label for="dob">Gimimo data:</label>
+      <input type="date" id="dob" required>
+
+      <button type="button" onclick="submitForm()">Siųsti</button>
+    </form>
+
+    <div id="errorContainer"></div>
+    <div id="infoContainer"></div>
+    <div id="resultContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
